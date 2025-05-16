@@ -1,2 +1,5 @@
 # Self-driving-car
 A self driving car made using a basic four wheel chasis, two dc motors to drive the back wheels forward, and a servo motor to control the steering of the car, that is interfaced to the arduino all coded in C.
+The car uses two ultrasonic sensors, each positioned on the front face of the car, one sensor on the right corner and the other on the left. they are positioned at a 45 degree angle so that the right sensor can detect an object in front of the car towards the right side and the left one can detect an object or obstacle towards the left side in front of the car.
+The code uses a cutoff distance according to which the arduino turns the car by controlling the servo motor if an obstacle is within the cutoff distance as specified in the code. It will turn based on which sensor is raising the lower distance value (if below the cutoff distance).
+The servo motor is connected to a self made steering mechanism that turns both the front wheels towards the right or left. If the servo motor is rotated by some angle towards right the steering mechanism turns the car right and vice versa for left
